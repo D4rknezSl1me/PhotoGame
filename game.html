@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronophoto - Game</title>
+<meta name="keywords" content="chronophoto, photo, game, picture, art, culture, history, fashion, technology">
+<meta name="description" content="Play the online game that tests your knowledge of pop culture and history. Simple and fun. Try to guess the year a picture was taken.">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PS6T4P6QY5"></script>
+<script>
+    window.ramp = window.ramp || {};
+    window.ramp.que = window.ramp.que || [];
+  </script>
+<script async src="//cdn.intergient.com/1024896/74077/ramp_config.js"></script>
+<script>
+      window._pwGA4PageviewId = ''.concat(Date.now());
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () { 
+        dataLayer.push(arguments);
+      };
+      gtag('js', new Date());
+      gtag('config', 'G-0GPHMP30SS', { 'send_page_view': false });
+      gtag(
+        'event',
+        'ramp_js',
+        {
+          'send_to': 'G-0GPHMP30SS',
+          'pageview_id': window._pwGA4PageviewId
+        }
+      );
+  </script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PS6T4P6QY5');
+</script>
+<link href="nouislider.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="nouislider.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="https://storage.googleapis.com/www.chronophoto.app/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://storage.googleapis.com/www.chronophoto.app/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://storage.googleapis.com/www.chronophoto.app/favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+</head>
+<body>
+<nav class="navbar2">
+<div class="navbar__container">
+<a href="./web.html"><div class="logo"></div></a>
+<ul class="navbar__menu">
+<li class="navbar__item">
+<a href="./about.html" class="navbar__links"> About </a>
+</li>
+</ul>
+</div>
+</nav>
+<img src="./Picture_links/game_background.png" id="game_background_image" />
+<div id="roundTitle"></div>
+<div id="leaderboardContainer"> <div data-pw-mobi="leaderboard_atf" id="pwMobiLbAtf"></div>
+<script type="text/javascript">
+      window.ramp.que.push(function () {
+          window.ramp.addTag("pwMobiLbAtf");
+      })
+    </script> </div>
+<div id="review">
+<div id="entries"></div>
+<div id="pointsFinal"><b></b></div>
+<div id="highScore"><b></b></div>
+<input type="submit" id="newGame" value="New Game">
+<div id="space"></div>
+</div>
+
+<div id="zoom_outer">
+<img id="zoom">
+<input type="image" src="./Picture_links/maximize.png" id="min_max" onclick="resize()">
+</div>
+<div id="photoQuestion"><b>What year was this photo taken?</b></div>
+<input type="text" id="year" min="1900" max="2023" value="1950" oninput="constrainInput()">
+<div id="slider-pips"></div>
+<input type="submit" id="submit" value="Submit" onclick="submitAnswer()">
+<div class="bottom">
+<div class="points_image">
+<img src="./Picture_links/Points.svg" id="points_image" />
+</div>
+<div id="results"><b></b></div>
+<div class="slider-styled" id="slider-round"></div>
+<div id="trueDate"><b></b></div>
+<div id="slider-pips2"></div>
+<div id="resultsTotal"><b></b></div>
+<input type="submit" id="endRound" value="Next Round">
+
+</div>
+<div id="space"></div>
+<footer><script async src="//cdn.intergient.com/ramp_core.js"></script></footer>
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
